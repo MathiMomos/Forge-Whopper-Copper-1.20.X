@@ -1,0 +1,47 @@
+{
+  "item.whopper_copper.copper_helmet": "Copper Helmet",
+  "item.whopper_copper.copper_chestplate": "Copper Chestplate",
+  "item.whopper_copper.copper_leggings": "Copper Leggings",
+  "item.whopper_copper.copper_boots": "Copper Boots",
+
+  "item.whopper_copper.exposed_copper_helmet": "Exposed Copper Helmet",
+  "item.whopper_copper.exposed_copper_chestplate": "Exposed Copper Chestplate",
+  "item.whopper_copper.exposed_copper_leggings": "Exposed Copper Leggings",
+  "item.whopper_copper.exposed_copper_boots": "Exposed Copper Boots",
+
+  "item.whopper_copper.weathered_copper_helmet": "Weathered Copper Helmet",
+  "item.whopper_copper.weathered_copper_chestplate": "Weathered Copper Chestplate",
+  "item.whopper_copper.weathered_copper_leggings": "Weathered Copper Leggings",
+  "item.whopper_copper.weathered_copper_boots": "Weathered Copper Boots",
+
+  "item.whopper_copper.oxidized_copper_helmet": "Oxidized Copper Helmet",
+  "item.whopper_copper.oxidized_copper_chestplate": "Oxidized Copper Chestplate",
+  "item.whopper_copper.oxidized_copper_leggings": "Oxidized Copper Leggings",
+  "item.whopper_copper.oxidized_copper_boots": "Oxidized Copper Boots",
+
+  "item.whopper_copper.copper_sword": "Copper Sword",
+  "item.whopper_copper.copper_pickaxe": "Copper Pickaxe",
+  "item.whopper_copper.copper_axe": "Copper Axe",
+  "item.whopper_copper.copper_shovel": "Copper Shovel",
+  "item.whopper_copper.copper_hoe": "Copper Hoe",
+
+  "item.whopper_copper.exposed_copper_sword": "Exposed Copper Sword",
+  "item.whopper_copper.exposed_copper_pickaxe": "Exposed Copper Pickaxe",
+  "item.whopper_copper.exposed_copper_axe": "Exposed Copper Axe",
+  "item.whopper_copper.exposed_copper_shovel": "Exposed Copper Shovel",
+  "item.whopper_copper.exposed_copper_hoe": "Exposed Copper Hoe",
+
+  "item.whopper_copper.weathered_copper_sword": "Weathered Copper Sword",
+  "item.whopper_copper.weathered_copper_pickaxe": "Weathered Copper Pickaxe",
+  "item.whopper_copper.weathered_copper_axe": "Weathered Copper Axe",
+  "item.whopper_copper.weathered_copper_shovel": "Weathered Copper Shovel",
+  "item.whopper_copper.weathered_copper_hoe": "Weathered Copper Hoe",
+
+  "item.whopper_copper.oxidized_copper_sword": "Oxidized Copper Sword",
+  "item.whopper_copper.oxidized_copper_pickaxe": "Oxidized Copper Pickaxe",
+  "item.whopper_copper.oxidized_copper_axe": "Oxidized Copper Axe",
+  "item.whopper_copper.oxidized_copper_shovel": "Oxidized Copper Shovel",
+  "item.whopper_copper.oxidized_copper_hoe": "Oxidized Copper Hoe",
+
+  "whopper_copper.whopper_copper_tab": "Whopper Copper"
+}

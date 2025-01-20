@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "minecraft:leather_helmet"
+  },
+  "addition": {
+    "item": "erythrium:copper_plate"
+  },
+  "result": {
+    "item": "erythrium:copper_helmet"
+  }
+}

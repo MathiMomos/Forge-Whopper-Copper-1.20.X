@@ -1,0 +1,20 @@
+{
+  "values": [
+    "whopper_copper:copper_helmet",
+    "whopper_copper:copper_chestplate",
+    "whopper_copper:copper_leggings",
+    "whopper_copper:copper_boots",
+    "whopper_copper:exposed_copper_helmet",
+    "whopper_copper:exposed_copper_chestplate",
+    "whopper_copper:exposed_copper_leggings",
+    "whopper_copper:exposed_copper_boots",
+    "whopper_copper:weathered_copper_helmet",
+    "whopper_copper:weathered_copper_chestplate",
+    "whopper_copper:weathered_copper_leggings",
+    "whopper_copper:weathered_copper_boots",
+    "whopper_copper:oxidized_copper_helmet",
+    "whopper_copper:oxidized_copper_chestplate",
+    "whopper_copper:oxidized_copper_leggings",
+    "whopper_copper:oxidized_copper_boots"
+  ]
+}
