@@ -1,12 +1,17 @@
 package net.mathimomos.whopper_copper.item.custom;
 
+import net.mathimomos.whopper_copper.WhopperCopper;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.Level;
 
 public class OxidizingPickaxeItem extends PickaxeItem {
     private final Item nextStateItem;
+    private int oxidationTime = 0;
 
     public OxidizingPickaxeItem(Tier tier, int attackDamageModifier, float attackSpeedModifier, Properties properties, Item nextStateItem) {
         super(tier, attackDamageModifier, attackSpeedModifier, properties);
@@ -17,21 +22,28 @@ public class OxidizingPickaxeItem extends PickaxeItem {
     public void inventoryTick(ItemStack pStack, Level pLevel, Entity pEntity, int pSlotId, boolean pIsSelected) {
         super.inventoryTick(pStack, pLevel, pEntity, pSlotId, pIsSelected);
 
-        if (!pLevel.isClientSide && pEntity instanceof Player player) {
-            if (pStack.getTag() != null && pStack.getTag().contains("oxidation_time")) {
-                long oxidationTime = pStack.getTag().getLong("oxidation_time");
-                if (oxidationTime <= pLevel.getGameTime()) {
-                    ItemStack oxidizedTool = new ItemStack(nextStateItem);
-                    oxidizedTool.setDamageValue(pStack.getDamageValue());
-                    if (pStack.hasCustomHoverName()){
-                        oxidizedTool.setHoverName(pStack.getHoverName());
-                    }
-                    player.getInventory().setItem(pSlotId, oxidizedTool);
-                }
+        if (WhopperCopper.COMMON_CONFIG.oxidationEnabled.get() && !pLevel.isClientSide && pEntity instanceof Player pPlayer) {
+            if (oxidationTime >= WhopperCopper.COMMON_CONFIG.oxidationTime.get() * 20) {
+                transformToOxidized(pStack, pPlayer, pSlotId);
             } else {
-                pStack.getOrCreateTag().putLong("oxidation_time", pLevel.getGameTime() + 20*10);
+                oxidationTime++;
             }
         }
     }
 
+    private void transformToOxidized(ItemStack pStack, Player player, int pSlotId) {
+        ItemStack oxidizedTool = new ItemStack(nextStateItem);
+
+        oxidizedTool.setDamageValue(pStack.getDamageValue());
+
+        if (pStack.hasCustomHoverName()) {
+            oxidizedTool.setHoverName(pStack.getHoverName());
+        }
+
+        if (pStack.getTag() != null) {
+            oxidizedTool.getOrCreateTag().merge(pStack.getTag());
+        }
+
+        player.getInventory().setItem(pSlotId, oxidizedTool);
+    }
 }

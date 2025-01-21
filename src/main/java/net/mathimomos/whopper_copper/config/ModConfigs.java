@@ -1,25 +1,20 @@
 package net.mathimomos.whopper_copper.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.config.ModConfig;
 
 public class ModConfigs {
-    public static final ForgeConfigSpec COMMON_CONFIG;
-    public static final ForgeConfigSpec.IntValue OXIDATION_TIME;
+    public final ForgeConfigSpec.IntValue oxidationTime;
+    public final ForgeConfigSpec.BooleanValue oxidationEnabled;
 
-    static {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
-        builder.push("Wormhole Artifact Config");
-        OXIDATION_TIME = builder
-                .comment("Time in minutes for next oxidation state")
-                .defineInRange("WormholeArtifactCooldown", 20, 0, Integer.MAX_VALUE);
+    public ModConfigs(final ForgeConfigSpec.Builder builder) {
+        builder.push("whopper-copper-config");
+        oxidationTime = builder
+                .comment("Time in seconds for the next oxidation state")
+                .defineInRange("oxidationTime", 600, 0, Integer.MAX_VALUE);
+
+        oxidationEnabled = builder
+                .comment("Is oxidation enabled?")
+                        .define("oxidationEnabled", true);
         builder.pop();
-
-        COMMON_CONFIG = builder.build();
-    }
-
-    public static void register() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, COMMON_CONFIG);
     }
 }
