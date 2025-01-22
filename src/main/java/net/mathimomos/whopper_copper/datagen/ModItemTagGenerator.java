@@ -19,27 +19,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        this.tag(ItemTags.TRIMMABLE_ARMOR)
-                .add(
-                        ModItems.COPPER_HELMET.get(),
-                        ModItems.COPPER_CHESTPLATE.get(),
-                        ModItems.COPPER_LEGGINGS.get(),
-                        ModItems.COPPER_BOOTS.get(),
-
-                        ModItems.EXPOSED_COPPER_HELMET.get(),
-                        ModItems.EXPOSED_COPPER_CHESTPLATE.get(),
-                        ModItems.EXPOSED_COPPER_LEGGINGS.get(),
-                        ModItems.EXPOSED_COPPER_BOOTS.get(),
-
-                        ModItems.WEATHERED_COPPER_HELMET.get(),
-                        ModItems.WEATHERED_COPPER_CHESTPLATE.get(),
-                        ModItems.WEATHERED_COPPER_LEGGINGS.get(),
-                        ModItems.WEATHERED_COPPER_BOOTS.get(),
-
-                        ModItems.OXIDIZED_COPPER_HELMET.get(),
-                        ModItems.OXIDIZED_COPPER_CHESTPLATE.get(),
-                        ModItems.OXIDIZED_COPPER_LEGGINGS.get(),
-                        ModItems.OXIDIZED_COPPER_BOOTS.get()
-                );
+        //this.tag(ItemTags.TRIMMABLE_ARMOR).add();
     }
 }

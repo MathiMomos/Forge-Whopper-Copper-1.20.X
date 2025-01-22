@@ -19,49 +19,6 @@ public class ModCreativeModeTabs {
     () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.COPPER_INGOT))
             .title(Component.translatable("whopper_copper.whopper_copper_tab"))
             .displayItems((pParameters, pOutput) -> {
-                pOutput.accept(ModItems.COPPER_SWORD.get());
-                pOutput.accept(ModItems.COPPER_PICKAXE.get());
-                pOutput.accept(ModItems.COPPER_AXE.get());
-                pOutput.accept(ModItems.COPPER_SHOVEL.get());
-                pOutput.accept(ModItems.COPPER_HOE.get());
-
-                pOutput.accept(ModItems.COPPER_HELMET.get());
-                pOutput.accept(ModItems.COPPER_CHESTPLATE.get());
-                pOutput.accept(ModItems.COPPER_LEGGINGS.get());
-                pOutput.accept(ModItems.COPPER_BOOTS.get());
-
-                pOutput.accept(ModItems.EXPOSED_COPPER_SWORD.get());
-                pOutput.accept(ModItems.EXPOSED_COPPER_PICKAXE.get());
-                pOutput.accept(ModItems.EXPOSED_COPPER_AXE.get());
-                pOutput.accept(ModItems.EXPOSED_COPPER_SHOVEL.get());
-                pOutput.accept(ModItems.EXPOSED_COPPER_HOE.get());
-
-                pOutput.accept(ModItems.EXPOSED_COPPER_HELMET.get());
-                pOutput.accept(ModItems.EXPOSED_COPPER_CHESTPLATE.get());
-                pOutput.accept(ModItems.EXPOSED_COPPER_LEGGINGS.get());
-                pOutput.accept(ModItems.EXPOSED_COPPER_BOOTS.get());
-
-                pOutput.accept(ModItems.WEATHERED_COPPER_SWORD.get());
-                pOutput.accept(ModItems.WEATHERED_COPPER_PICKAXE.get());
-                pOutput.accept(ModItems.WEATHERED_COPPER_AXE.get());
-                pOutput.accept(ModItems.WEATHERED_COPPER_SHOVEL.get());
-                pOutput.accept(ModItems.WEATHERED_COPPER_HOE.get());
-
-                pOutput.accept(ModItems.WEATHERED_COPPER_HELMET.get());
-                pOutput.accept(ModItems.WEATHERED_COPPER_CHESTPLATE.get());
-                pOutput.accept(ModItems.WEATHERED_COPPER_LEGGINGS.get());
-                pOutput.accept(ModItems.WEATHERED_COPPER_BOOTS.get());
-
-                pOutput.accept(ModItems.OXIDIZED_COPPER_SWORD.get());
-                pOutput.accept(ModItems.OXIDIZED_COPPER_PICKAXE.get());
-                pOutput.accept(ModItems.OXIDIZED_COPPER_AXE.get());
-                pOutput.accept(ModItems.OXIDIZED_COPPER_SHOVEL.get());
-                pOutput.accept(ModItems.OXIDIZED_COPPER_HOE.get());
-
-                pOutput.accept(ModItems.OXIDIZED_COPPER_HELMET.get());
-                pOutput.accept(ModItems.OXIDIZED_COPPER_CHESTPLATE.get());
-                pOutput.accept(ModItems.OXIDIZED_COPPER_LEGGINGS.get());
-                pOutput.accept(ModItems.OXIDIZED_COPPER_BOOTS.get());
             })
             .build());
 

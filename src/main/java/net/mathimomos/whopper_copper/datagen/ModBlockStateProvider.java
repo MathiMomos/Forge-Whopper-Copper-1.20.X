@@ -19,16 +19,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
     }
+
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
+
     private void blockBottomTopWithItem(RegistryObject<Block> blockRegistryObject){
         ResourceLocation side = new ResourceLocation(WhopperCopper.MOD_ID, "block/" + blockRegistryObject.getId().getPath());
         ResourceLocation bottom = new ResourceLocation(WhopperCopper.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_bottom");
         ResourceLocation top = new ResourceLocation(WhopperCopper.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
         simpleBlockWithItem(blockRegistryObject.get(), models().cubeBottomTop(blockRegistryObject.getId().getPath(), side, bottom, top));
     }
+
     private void blockDifferentWithItem(RegistryObject<Block> blockRegistryObject, boolean rotation) {
         ResourceLocation down = new ResourceLocation(WhopperCopper.MOD_ID, "block/" + blockRegistryObject.getId().getPath()+ "_down");
         ResourceLocation up = new ResourceLocation(WhopperCopper.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_up");

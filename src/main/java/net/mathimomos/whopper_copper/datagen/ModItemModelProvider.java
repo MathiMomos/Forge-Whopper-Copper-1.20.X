@@ -39,51 +39,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        trimmedArmorItem(ModItems.COPPER_HELMET);
-        trimmedArmorItem(ModItems.COPPER_CHESTPLATE);
-        trimmedArmorItem(ModItems.COPPER_LEGGINGS);
-        trimmedArmorItem(ModItems.COPPER_BOOTS);
-
-        trimmedArmorItem(ModItems.EXPOSED_COPPER_HELMET);
-        trimmedArmorItem(ModItems.EXPOSED_COPPER_CHESTPLATE);
-        trimmedArmorItem(ModItems.EXPOSED_COPPER_LEGGINGS);
-        trimmedArmorItem(ModItems.EXPOSED_COPPER_BOOTS);
-
-        trimmedArmorItem(ModItems.WEATHERED_COPPER_HELMET);
-        trimmedArmorItem(ModItems.WEATHERED_COPPER_CHESTPLATE);
-        trimmedArmorItem(ModItems.WEATHERED_COPPER_LEGGINGS);
-        trimmedArmorItem(ModItems.WEATHERED_COPPER_BOOTS);
-
-        trimmedArmorItem(ModItems.OXIDIZED_COPPER_HELMET);
-        trimmedArmorItem(ModItems.OXIDIZED_COPPER_CHESTPLATE);
-        trimmedArmorItem(ModItems.OXIDIZED_COPPER_LEGGINGS);
-        trimmedArmorItem(ModItems.OXIDIZED_COPPER_BOOTS);
-
-        handheldItem(ModItems.COPPER_SWORD);
-        handheldItem(ModItems.COPPER_PICKAXE);
-        handheldItem(ModItems.COPPER_AXE);
-        handheldItem(ModItems.COPPER_SHOVEL);
-        handheldItem(ModItems.COPPER_HOE);
-
-        handheldItem(ModItems.EXPOSED_COPPER_SWORD);
-        handheldItem(ModItems.EXPOSED_COPPER_PICKAXE);
-        handheldItem(ModItems.EXPOSED_COPPER_AXE);
-        handheldItem(ModItems.EXPOSED_COPPER_SHOVEL);
-        handheldItem(ModItems.EXPOSED_COPPER_HOE);
-
-        handheldItem(ModItems.WEATHERED_COPPER_SWORD);
-        handheldItem(ModItems.WEATHERED_COPPER_PICKAXE);
-        handheldItem(ModItems.WEATHERED_COPPER_AXE);
-        handheldItem(ModItems.WEATHERED_COPPER_SHOVEL);
-        handheldItem(ModItems.WEATHERED_COPPER_HOE);
-
-        handheldItem(ModItems.OXIDIZED_COPPER_SWORD);
-        handheldItem(ModItems.OXIDIZED_COPPER_PICKAXE);
-        handheldItem(ModItems.OXIDIZED_COPPER_AXE);
-        handheldItem(ModItems.OXIDIZED_COPPER_SHOVEL);
-        handheldItem(ModItems.OXIDIZED_COPPER_HOE);
 
     }
+
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = WhopperCopper.MOD_ID;
 
